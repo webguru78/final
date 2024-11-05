@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+ /* Custom styles for the navbar */
+ .navbar {
+    background-color: #FAF3E0; /* Light beige background color */
+    padding: 1rem 0.5rem; /* Padding for spacing */
+  }
+  
+ 
+  
+  .navbar-brand:hover {
+    color: #4B2E1B; /* Keep the same color on hover */
+  }
+
+  .navbar-nav .nav-link {
+    color: #5E4533; /* Medium brown color for nav links */
+    margin: 0 0.75rem; /* Horizontal margin for spacing */
+    font-weight: 500; /* Semi-bold font weight */
+    padding: 0.5rem 1rem; /* Padding for the nav links */
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s;
+  }
+
+  .navbar-nav .nav-link:hover {
+    background-color: #EFE1C6; /* Light brown background on hover */
+    color: #4B2E1B; /* Dark brown color on hover */
+  }
+
+
+.bg-text
+{
+    margin: 3rem 0;
+    background-color: #FFF6C4;
+    padding: 2rem;
+    height: 84vh;       
+    border-radius: 40px;
+}
+
+.bg-text h3
+{
+    
+font-family: Frank Ruhl Libre;
+font-size: 35px;
+font-weight: 400;
+line-height: 60px;
+text-align: left;
+color: #551B10;
+}
+.bg-text li{
+   color: #551B10;
+font-family: Inter;
+font-size: 17px;
+font-weight: 600;
+line-height: 30px;
+text-align: left;
+margin-top: 0.4rem;
+}
+.bg img
+{
+    width: 95%;
+    margin-top: 3rem;
+}
+.bg-text button
+{
+    background-color: #551B10;
+    color: white;
+    font-family: Frank Ruhl Libre;
+font-size: 18px;
+font-weight: 700;
+line-height: 25px;
+text-align: center;
+width: 44%;
+margin: 3rem 0;
+border: 1px solid #551B10;
+border-radius: 66px;
+padding: 10px 12px;
+
+}
+
+.card-content
+{
+    border: 1px solid #D4C3AF;
+    border-radius: 44px;
+    padding: 2rem;
+    margin: 0.9rem;
+    width: 90%;
+}
+.card-number h1
+{
+   color: #551B10;
+font-family: Frank Ruhl Libre;
+font-size: 80px;
+font-weight: 400;
+line-height: 80px;
+text-align: left;
+
+}
+.card-content p
+{
+color: #551B10;
+font-size: 20px;
+font-weight: 600;
+line-height: 36px;
+text-align: left;
+margin: 10px 0;
+
+}
+
+.h-text {
+    margin: 3rem 0;
+    background-color: #FFF6C4;
+    padding: 2rem;
+    height: auto; 
+    border-radius: 40px;
+    text-align: left; 
+  }
+  
+  .h-text h3 {
+    color: #551B10;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left; /* Default text alignment */
+  }
+  
+  .h-text small {
+    color: #551B10;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: -0.5rem;
+  }
+  
+  .h-text button {
+    background-color: #551B10;
+    color: white;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    width: 44%;
+    margin: 3rem 0;
+    border: 1px solid #551B10;
+    border-radius: 66px;
+    padding: 10px 12px;
+  }
+  
+  .h-text img {
+    object-fit: contain;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .h-text {
+      text-align: center; /* Center text for tablets and smaller screens */
+      margin: 2rem 0; /* Adjust margin */
+      padding: 1.5rem; /* Reduce padding */
+      height: auto; /* Remove fixed height */
+    }
+  
+    .h-text h3 {
+      font-size: 28px; /* Adjust font size */
+      line-height: 40px; /* Adjust line height */
+      text-align: center; /* Center text */
+    }
+  
+    .h-text small {
+      font-size: 16px; /* Adjust font size */
+      line-height: 24px; /* Adjust line height */
+      justify-content: center; /* Center icons and text */
+    }
+  
+    .h-text button {
+      width: 80%; /* Make buttons take up more width on smaller screens */
+      margin: 1.5rem 0; /* Adjust margin */
+    }
+  
+    .bg img {
+      width: 100%; /* Make image responsive */
+      margin-left: 0; /* Remove margin for better centering */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .h-text {
+      padding: 1rem; /* Further reduce padding for small devices */
+    }
+  
+    .h-text h3 {
+      font-size: 24px; /* Smaller font size for mobile */
+      line-height: 36px;
+    }
+  
+    .h-text small {
+      font-size: 14px; /* Smaller font size for mobile */
+      line-height: 20px;
+    }
+  }
+  
+
+#pack
+{
+    background-color: #D4C3AF;
+    border: 1px solid #D4C3AF;
+    border-radius: 66px;
+    text-align: center;
+    width: 85%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+.pack-text h1
+{
+    font-family: Frank Ruhl Libre;
+font-size: 37px;
+font-weight: 500;
+line-height: 55.5px;
+color: #551B10;
+margin-top: 1rem;
+}
+.pack-text img
+{
+    width: 15%;
+}
+
+/* Vitamin Start */
+#vitamin
+{
+    margin: 2rem 0;
+}
+.vitamin-text img
+{
+    width: 25%;
+}
+.vitamin-text 
+{
+    border: 1px solid #D4C3AF;
+    border-radius: 24px;
+    padding: 10px;
+    margin: 1rem 0;
+}
+.vitamin-text h4
+{   
+   color: #551B10;
+font-family: Frank Ruhl Libre;
+font-size: 32px;
+font-weight: 500;
+line-height: 48px;
+text-align: left;
+margin: 0.9rem 0;
+}
+.vitamin-text p
+{
+  color: #551B10;
+font-family: Inter;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+text-align: left;
+
+}
+/* Vitamin End */
+
+.all
+{
+    text-align: center;
+    margin: 1rem 0;
+    background-color: #FFF6C4;
+border-radius: 24px;
+padding: 10px;
+}
+.all h4
+{
+    color: #551B10;
+font-family: Frank Ruhl Libre;
+font-size: 28px;
+font-weight: 500;
+line-height: 48px;
+text-align: center;
+}
+
+/* Team Start */
+#team {
+    margin: 5rem 0;
+  }
+  
+  .team-text {
+    border: 1px solid #D4C3AF;
+    border-radius: 40px;
+    padding: 1rem;
+    min-height: 60vh;
+    text-align: center; /* Center text by default */
+  }
+  
+  .team-text img {
+    width: 20%;
+    display: block;
+    margin: auto;
+  }
+  
+  .team-text h4 {
+    color: #551B10;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: center;
+    margin: 0.8rem 0;
+  }
+  
+  .team-text p {
+    color: #551B10;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .team-text h5 {
+    color: #551B10;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 18px;
+    text-align: center;
+    margin: 0.9rem;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    #team {
+      margin: 3rem 1rem; /* Reduce margin for smaller screens */
+    }
+  
+    .team-text {
+      min-height: auto; /* Remove fixed height */
+      padding: 1.5rem; /* Adjust padding for smaller devices */
+    }
+  
+    .team-text h4 {
+      font-size: 28px; /* Adjust font size */
+      line-height: 40px; /* Adjust line height */
+    }
+  
+    .team-text p {
+      font-size: 18px; /* Adjust font size */
+      line-height: 28px; /* Adjust line height */
+    }
+  
+    .team-text h5 {
+      font-size: 16px; /* Adjust font size */
+      line-height: 20px;
+    }
+  
+    .all {
+      width: 100%; /* Make container full width on smaller screens */
+      margin-top: 2rem;
+    }
+  
+    .all h4 {
+      font-size: 24px; /* Adjust font size for smaller devices */
+      line-height: 36px;
+      text-align: center; /* Center text */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #team {
+      margin: 2rem 0.5rem; /* Further reduce margin for very small devices */
+    }
+  
+    .team-text {
+      padding: 1rem; /* Reduce padding */
+    }
+  
+    .team-text h4 {
+      font-size: 24px; /* Smaller font size for mobile */
+      line-height: 36px;
+    }
+  
+    .team-text p {
+      font-size: 16px; /* Smaller font size for mobile */
+      line-height: 24px;
+    }
+  
+    .team-text h5 {
+      font-size: 14px; /* Smaller font size for mobile */
+      line-height: 18px;
+    }
+  
+    .all h4 {
+      font-size: 20px; /* Further reduce font size */
+      line-height: 30px;
+      text-align: center; /* Center text */
+    }
+  }
+  
+
+/* Price Start */
+.p-flex img
+{
+width: 132px;
+height: 196px;
+margin-left: 3rem;
+}
+
+.price-text
+{
+    border: 1px solid #D4C3AF;
+    border-radius: 40px;
+    padding: 1rem;
+    min-height: 95vh;
+}
+
+.price-text h4
+{
+  background-color: #FC6D31;
+  color: #FFFBE4;
+  border-radius: 66px;
+  border: 1px solid #FFFBE4;
+  width: 40%; 
+font-family: Frank Ruhl Libre;
+font-size: 25px;
+font-weight: 500;
+line-height: 48px;  
+text-align: center;
+cursor: pointer;
+}
+.price-text span
+{
+    text-decoration: line-through;
+}
+.p-flex h3
+{
+    font-family: Frank Ruhl Libre;
+font-size: 48px;
+font-weight: 400;
+line-height: 55.2px;
+color: #551B10;
+}
+
+.price-list p
+{
+    font-family: Inter;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+text-align: left;
+color: #551B10;
+}
+.price-list li
+{
+    font-family: Inter;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+text-align: left;
+color: #551B10;
+}
+.price-list h6
+{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: #551B10;
+
+}
+/* Price End */
+
+/* Plan Start */
+#plan
+{
+    margin: 5rem 0;
+    text-align: center;
+}
+.plan-text
+{
+    border: 1px solid #D4C3AF;
+    border-radius: 40px;
+    padding: 1rem;
+}
+.plan-text h4
+{
+    color: #551B10;
+font-family: Frank Ruhl Libre;
+font-size: 32px;
+font-weight: 500;
+line-height: 25px;
+text-align: center;
+background-color: #D4C3AF;
+padding: 1rem;
+border-radius: 200px;
+width: 70%;
+display: block;
+margin: auto;
+}
+.plan-text h3 span
+{
+    text-decoration: line-through;
+    color: #551B10;
+    font-family: Frank Ruhl Libre;
+font-size: 64px;
+font-weight: 400;
+line-height: 80px;
+}
+.plan-text h3
+{
+color: #FC6D31;
+font-family: Frank Ruhl Libre;
+font-size: 64px;
+font-weight: 400;
+line-height: 80px;
+text-align: center;
+margin-left: 4rem;
+}
+.plan-text small
+{
+color: #551B10;
+font-family: Inter;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+}
+.plan-text h6
+{
+   color: #551B10;
+font-family: Inter;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+text-align: center;
+}
+.plan-text button
+{
+    background-color: #FC6D31;
+    color: #FFFBE4;
+    border: 1px solid #FC6D31;
+    padding: 1rem;
+    width: 60%;
+    margin: 1rem 0;
+    border-radius: 10px;
+    font-family: Frank Ruhl Libre;
+font-size: 25px;
+font-weight: 700;
+line-height: 37.5px;
+text-align: center;
+}
+
+.plan-text h5
+{
+   color: #551B10;
+font-family: Inter;
+font-size: 24px;
+font-weight: 600;
+line-height: 36px;
+text-align: center;
+margin: 1rem 0;
+}
+/* Plan End */
+
+/* Policy Start */
+/* styles.css */
+
+/* Background and border styling for the main container */
+.satisfaction-banner {
+    background-color: #e5d8c0;
+    border-radius: 22px;
+    width: 100%;
+}
+.satisfaction-banner img
+{
+    width: 25%;
+}
+/* Styling for the badge image */
+.guarantee-badge {
+    width: 80px; /* Adjust size as needed */
+}
+
+/* Title styling */
+.satisfaction-banner .title {
+    color: #551B10;
+    font-family: Frank Ruhl Libre;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 60px;
+    
+}
+
+/* Description text styling */
+.satisfaction-banner .description {
+  color: #551B10;
+    font-family: Inter;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+    
+}
+
+/* Policy End */
+
+/* styles.css */
+
+
+/* styles.css */
+
+/* General styling for the accordion container */
+.accordion-item.custom-accordion-item {
+    background-color: #f6efdf;
+    border: 1px solid #e5d8c0;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/* Custom styling for accordion buttons */
+.accordion-button.custom-button {
+    background-color: #f6efdf;
+    color: #5a3921;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+}
+
+.accordion-button.custom-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button.custom-button:not(.collapsed) {
+    color: #5a3921;
+    background-color: #e5d8c0;
+    border-radius: 20px;
+}
+
+/* Custom styling for accordion body */
+.accordion-body {
+    color: #5a3921;
+    font-size: 1rem;
+    padding: 15px;
+    line-height: 1.6;
+}
+
+#last
+{
+    background-color: #D4C3AF;
+    min-height: 150vh;
+}
+/* Custom Header */
+.custom-header {
+    background-color: #D4C3AF; /* Light beige */
+    color: #583a2e; /* Dark brown */
+}
+
+.custom-logo {
+    font-family: 'Times New Roman', serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #583a2e;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.nav-link:hover {
+    color: #af8d72; /* Slightly lighter brown */
+}
+
+/* Main Section */
+.references-section {
+    background-color: #D4C3AF;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+/* Title */
+.references-section h2 {
+   color: #551B10;
+    font-family: Frank Ruhl Libre;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: center;
+    
+}
+
+/* Reference Links */
+.reference-link {
+    display: inline-block;
+    background-color: #fff;
+    color: #583a2e;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    padding: 10px 15px;
+    border: 1px solid #d4c3af;
+    border-radius: 10px;
+    text-decoration: none;
+    max-width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.reference-link a
+{
+ color: #551B10;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: center;
+
+}
+
+.reference-link:hover {
+    background-color: #e8dfd0;
+    color: #583a2e;
+    text-decoration: none;
+}
+.link a
+{
+    color: #551B10;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: center;
+
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .reference-link {
+        width: 100%;
+        text-align: left;
+    }
+}
