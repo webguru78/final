@@ -4,31 +4,34 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-}
- /* Custom styles for the navbar */
- .navbar {
-    background-color: #FAF3E0; /* Light beige background color */
-    padding: 1rem 0.5rem; /* Padding for spacing */
+  
   }
-  
- 
-  
+
+  .navbar {
+    padding: 1rem 0.5rem; 
+    width: 80% !important;
+  margin: auto !important;
+  margin-top: 1rem !important;
+  }
+ .nav-link{
+  margin-left: 25px !important;
+ }
   .navbar-brand:hover {
-    color: #4B2E1B; /* Keep the same color on hover */
+    color: #4B2E1B; 
   }
-
+.navbar-nav {
+  background: #D4C3AF;
+    border-radius: 66px;
+    padding: 10px 35px 10px 35px;
+    margin: auto;
+}
   .navbar-nav .nav-link {
-    color: #5E4533; /* Medium brown color for nav links */
-    margin: 0 0.75rem; /* Horizontal margin for spacing */
-    font-weight: 500; /* Semi-bold font weight */
-    padding: 0.5rem 1rem; /* Padding for the nav links */
-    border-radius: 20px; /* Rounded corners */
+    color: #5E4533; 
+    margin: 0 0.75rem; 
+    font-weight: 500;
+    padding: 0.5rem 1rem; 
+    border-radius: 20px;
     transition: background-color 0.3s;
-  }
-
-  .navbar-nav .nav-link:hover {
-    background-color: #EFE1C6; /* Light brown background on hover */
-    color: #4B2E1B; /* Dark brown color on hover */
   }
 
 
@@ -37,7 +40,7 @@
   margin: 3rem 0;
   background-color: #FFF6C4;
   padding: 2rem;
-  height: 83vh;
+  height: 60vh;
   border-radius: 40px;
   text-align: left; /* Center on small screens with media query */
 }
@@ -63,7 +66,7 @@
 
 /* Image styling */
 .bg img {
-  width: 95%;
+  width: 90%;
   margin-top: 3rem;
 }
 
@@ -77,7 +80,7 @@
   line-height: 25px;
   text-align: center;
   width: 44%;
-  margin: 6rem 0 0;
+  margin: 7rem 0 0;
   border: 1px solid #551B10;
   border-radius: 66px;
   padding: 10px 12px;
@@ -87,29 +90,25 @@
 @media (max-width: 767px) {
   .bg-text {
       height: auto; /* Adjust height to fit content */
-      text-align: center;
+      text-align: justify;
       padding: 2rem 1rem;
+      min-height: 10vh;
   }
 
   .bg-text h3 {
-      font-size: 32px;
+      font-size: 29px;
       line-height: 40px;
   }
 
   .bg-text li {
       font-size: 16px;
       line-height: 24px;
-      text-align: center;
+      text-align: justify;
   }
 
   .bg img {
       width: 100%; /* Full width for better display on small screens */
       margin-top: 1.5rem;
-  }
-
-  .bg-text button {
-      width: 70%; /* Wider button on smaller screens */
-      margin-top: 2rem;
   }
 }
 
@@ -127,7 +126,7 @@
   .bg-text li {
       font-size: 16px;
       line-height: 24px;
-      text-align: center;
+      text-align: justify;
   }
 
   .bg img {
@@ -142,43 +141,70 @@
 }
 
 
-.card-content
-{
-    border: 1px solid #D4C3AF;
-    border-radius: 44px;
-    padding: 2rem;
-    margin: 0.9rem;
-    width: 90%;
+.card-content {
+  border: 1px solid #D4C3AF;
+  border-radius: 44px;
+  padding: 2rem;
+  margin: 0.9rem 0;
+  width: 100%; /* Full width to avoid overflow */
+  text-align: left;
 }
-.card-number h1
-{
-   color: #551B10;
-font-family: Frank Ruhl Libre;
-font-size: 80px;
-font-weight: 400;
-line-height: 80px;
-text-align: left;
 
+.card-number h1 {
+  color: #551B10;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 80px;
+  margin: 0; /* Remove margin for cleaner layout */
 }
-.card-content p
-{
-color: #551B10;
-font-size: 19px;
-font-weight: 600;
-line-height: 36px;
-text-align: left;
-margin: 10px 0;
 
+.card-content p {
+  color: #551B10;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 36px;
+  margin: 10px 0;
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .card-number h1 {
+      font-size: 56px;
+      line-height: 50px;
+  }
+  .card-number
+  {
+    min-height: 10vh;
+  }
+  .card-content p {
+      font-size: 30px;
+      line-height: 55px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-number h1 {
+      font-size: 40px;
+      line-height: 40px;
+  }
+
+  .card-content p {
+      font-size: 24px;
+      line-height: 34px;
+  }
+}
+
 
 
 
 .h-text {
     margin: 2.5rem 0;
     background-color: #FFF6C4;
-    padding: 2.3rem;
+    padding: 2.3rem; 
     border-radius: 40px;
     text-align: left; 
+    
   }
   
   .h-text h3 {
@@ -209,7 +235,7 @@ margin: 10px 0;
     line-height: 25px;
     text-align: center;
     width: 44%;
-    margin-top: 4rem;
+    margin-top: 2rem;
     border: 1px solid #551B10;
     border-radius: 66px;
     padding: 10px 12px;
@@ -221,33 +247,31 @@ margin: 10px 0;
   
   /* Media Queries for Responsiveness */
   @media (max-width: 768px) {
-    .h-text {
-      text-align: center; /* Center text for tablets and smaller screens */
-      margin: 2rem 0; /* Adjust margin */
-      padding: 1.5rem; /* Reduce padding */
-      height: auto; /* Remove fixed height */
-    }
+    
   
     .h-text h3 {
       font-size: 28px; /* Adjust font size */
       line-height: 40px; /* Adjust line height */
-      text-align: center; /* Center text */
+      text-align: justify; /* Center text */
     }
   
     .h-text small {
       font-size: 16px; /* Adjust font size */
       line-height: 24px; /* Adjust line height */
-      justify-content: center; /* Center icons and text */
+
     }
   
+  
     .h-text button {
-      width: 80%; /* Make buttons take up more width on smaller screens */
+      width: 43%; /* Make buttons take up more width on smaller screens */
       margin: 1.5rem 0; /* Adjust margin */
     }
   
     .bg img {
       width: 100%; /* Make image responsive */
-      margin-left: 0; /* Remove margin for better centering */
+      display: block;
+      margin: auto;
+
     }
   }
   
@@ -274,24 +298,62 @@ margin: 10px 0;
     border: 1px solid #D4C3AF;
     border-radius: 66px;
     text-align: center;
-    width: 85%;
+    width: 69%;
+    padding: 10px;
     display: block;
     margin: auto;
-    padding: 10px;
 }
-.pack-text h1
-{
-    font-family: Frank Ruhl Libre;
-font-size: 37px;
-font-weight: 500;
-line-height: 55.5px;
-color: #551B10;
-margin-top: 1rem;
+.pack-text h1 {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 37px;
+  font-weight: 500;
+  line-height: 55.5px;
+  color: #551B10;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Wraps text and image */
 }
-.pack-text img
-{
-    width: 15%;
+
+.pack-text img {
+  width: 15%;
+  margin-right: 10px; /* Adds spacing between image and text */
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .pack-text h1 {
+      font-size: 44px;
+      line-height: 45px;
+  }
+  .pack-text
+  {
+    width: 100%;
+  }
+
+  .pack-text img {
+      width: 50%;
+      margin: 1rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .pack-text h1 {
+      font-size: 26px;
+      line-height: 35px;
+  }
+
+  .pack-text img {
+      width: 60%; /* Increase image width for better visibility */
+  }
+  .pack-text
+  {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
 
 /* Vitamin Start */
 #vitamin
@@ -328,24 +390,66 @@ line-height: 30px;
 text-align: left;
 
 }
+
+/* Media Query for small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .vitamin-text h4 {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 600;
+  }
+  
+  .vitamin-text p {
+      font-size: 25px;
+      line-height: 38px;
+      font-weight: 600;
+  }
+  
+  .vitamin-text {
+      padding: 8px;
+      
+  }
+
+  #vitamin {
+      margin: 1rem 0;
+  }
+}
+
+/* Media Query for extra small devices (phones, 576px and up) */
+@media (max-width: 576px) {
+  .vitamin-text h4 {
+      font-size: 20px;
+      line-height: 30px;
+  }
+
+  .vitamin-text p {
+      font-size: 16px;
+      line-height: 24px;
+  }
+
+  .vitamin-text img {
+      width: 40%;
+  }
+}
+
+/* Media Query for very small devices (extra small phones, 360px and up) */
+@media (max-width: 360px) {
+  .vitamin-text h4 {
+      font-size: 18px;
+      line-height: 28px;
+  }
+
+  .vitamin-text p {
+      font-size: 14px;
+      line-height: 22px;
+  }
+
+ 
+}
+
 /* Vitamin End */
 
-.all
-{
-    text-align: center;
-    margin: 1rem 0;
-    background-color: #FFF6C4;
-border-radius: 24px;
-padding: 10px;
-}
-.all h4
-{
-    color: #551B10;
-font-family: inter,sans-serif;
-font-size: 24px;
-line-height: 48px;
-text-align: center;
-}
+
 
 /* Team Start */
 #team {
@@ -356,7 +460,7 @@ text-align: center;
     border: 1px solid #D4C3AF;
     border-radius: 40px;
     padding: 1rem;
-    min-height: 60vh;
+    min-height: 40vh;
     text-align: center; /* Center text by default */
     margin: 1rem 0;
   }
@@ -520,32 +624,34 @@ text-align: center;
   font-weight: 500;
   line-height: 30px;
   color: #551B10;
-  text-align: left;
+  text-align: justify;
 }
 
 /* Adjust for small screens */
 @media (max-width: 767px) {
   .p-flex img {
-      width: 100px;
+      width: 30%;
       height: auto;
-      margin-left: 0;
+
       margin-top: 1rem;
   }
 
   .price-text {
       min-height: auto;
       padding: 1rem;
-      text-align: center;
+      text-align: justify;
   }
 
   .price-text h4 {
-      width: 60%; /* Widen the width on smaller screens */
-      font-size: 22px;
+      width: 100%; /* Widen the width on smaller screens */
+      font-size: 32px;
   }
 
   .p-flex h3 {
-      font-size: 32px;
+      font-size: 30px;
       line-height: 40px;
+      display: block;
+      margin-right: auto;
   }
 
   .price-list p,
@@ -553,12 +659,7 @@ text-align: center;
   .price-list h6 {
       font-size: 16px;
       line-height: 24px;
-      text-align: center;
-  }
-
-  .all {
-      width: 100%;
-      padding: 1rem;
+      text-align: justify;
   }
 }
 
@@ -585,10 +686,7 @@ text-align: center;
       text-align: center;
   }
 
-  .all {
-      width: 90%;
-      margin: auto;
-  }
+
 }
 /* Price End */
 
@@ -604,6 +702,7 @@ text-align: center;
     border: 1px solid #D4C3AF;
     border-radius: 40px;
     padding: 1rem;
+    margin: 1rem 0;
 }
 .plan-text h4
 {
@@ -689,38 +788,76 @@ margin: 1rem 0;
 
 /* Background and border styling for the main container */
 .satisfaction-banner {
-    background-color: #e5d8c0;
-    border-radius: 22px;
-    width: 100%;
+  background-color: #e5d8c0;
+  border-radius: 22px;
+  width: 100%;
+  padding: 20px;
 }
-.satisfaction-banner img
-{
-    width: 25%;
-}
+
 /* Styling for the badge image */
+.satisfaction-banner img {
+  width: 80px;
+}
+
 .guarantee-badge {
-    width: 80px; /* Adjust size as needed */
+  max-width: 100px; /* Adjust size as needed */
 }
 
 /* Title styling */
 .satisfaction-banner .title {
-    color: #551B10;
-    font-family: Frank Ruhl Libre;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 60px;
-    
+  color: #551B10;
+  font-family: Frank Ruhl Libre;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 /* Description text styling */
 .satisfaction-banner .description {
   color: #551B10;
-    font-family: Inter;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: left;
-    
+  font-family: Inter;
+  font-size: 24px;
+  line-height: 1.5;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .satisfaction-banner {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  /* Center-align and adjust image */
+  .satisfaction-banner img {
+      margin-bottom: 20px;
+      width: 50%;
+  }
+
+  /* Font size adjustments for smaller screens */
+  .satisfaction-banner .title {
+      font-size: 30px;
+      line-height: 1.2;
+  }
+
+  .satisfaction-banner .description {
+      font-size: 20px;
+      line-height: 1.4;
+  }
+  
+}
+
+@media (max-width: 576px) {
+  .satisfaction-banner .title {
+      font-size: 24px;
+      line-height: 1.2;
+  }
+
+  .satisfaction-banner .description {
+      font-size: 18px;
+      line-height: 1.4;
+  }
+}
+
 
 /* Policy End */
 
@@ -773,7 +910,7 @@ margin: 1rem 0;
 #last
 {
     background-color: #D4C3AF;
-    min-height: 150vh;
+    min-height: 115vh;
 }
 /* Custom Header */
 .custom-header {
@@ -865,4 +1002,97 @@ text-align: center;
         width: 100%;
         text-align: left;
     }
+}
+
+
+.all-one
+{
+  background-color: #FFF6C4;
+  color: #551B10;
+  border-radius: 24px;
+}
+.all-one h4
+{
+font-family: Frank Ruhl Libre;
+font-size: 32px;
+font-weight: 500;
+line-height: 48px;
+text-align: center;
+}
+.all-two
+{
+  background-color: #D4C3AF;
+  color: #551B10;
+  border-radius: 24px;
+  margin-top: 1rem;
+}
+.all-two h4
+{
+font-family: Frank Ruhl Libre;
+font-size: 32px;
+font-weight: 500;
+line-height: 48px;
+text-align: center;
+}
+.all-three
+{
+  background-color: #D4C3AF;
+  color: #551B10;
+  border-radius: 140px;
+  margin: 3rem 0;
+  padding: 1.5rem;
+}
+.all-three h4
+{
+font-family: Frank Ruhl Libre;
+font-size: 32px;
+font-weight: 500;
+line-height: 32px;
+text-align: center;
+}
+.all-four
+{
+  background-color: #FFF6C4;
+  color: #551B10;
+  border-radius: 24px;
+  margin-top: 1rem;
+}
+.all-four h4
+{
+font-family: Frank Ruhl Libre;
+font-size: 32px;
+font-weight: 500;
+line-height: 55px;
+}
+.all-five
+{
+  background-color: #D4C3AF;
+  color: #551B10;
+  border-radius: 140px;
+  margin-top: 1rem;
+  padding: 1.5rem;
+}
+.all-five h4
+{
+font-family: Frank Ruhl Libre;
+font-size: 43px;
+font-weight: 500;
+line-height: 55px;
+color: #551B10;
+text-align: center;
+}
+.all-six
+{
+  background-color: #FFF6C4;
+  color: #551B10;
+  border-radius: 24px;
+  margin-top: 1rem;
+  padding: 24px;
+}
+.all-six h4
+{
+font-family: Frank Ruhl Libre;
+font-size: 30px;
+font-weight: 500;
+line-height: 55px;
 }
