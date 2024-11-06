@@ -32,55 +32,115 @@
   }
 
 
-.bg-text
-{
-    margin: 3rem 0;
-    background-color: #FFF6C4;
-    padding: 2rem;
-    height: 84vh;       
-    border-radius: 40px;
+/* Background text styling */
+.bg-text {
+  margin: 3rem 0;
+  background-color: #FFF6C4;
+  padding: 2rem;
+  height: 83vh;
+  border-radius: 40px;
+  text-align: left; /* Center on small screens with media query */
 }
 
-.bg-text h3
-{
-    
-font-family: Frank Ruhl Libre;
-font-size: 35px;
-font-weight: 400;
-line-height: 60px;
-text-align: left;
-color: #551B10;
+/* Heading in background text */
+.bg-text h3 {
+  font-family: Frank Ruhl Libre;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #551B10;
 }
-.bg-text li{
-   color: #551B10;
-font-family: Inter;
-font-size: 17px;
-font-weight: 600;
-line-height: 30px;
-text-align: left;
-margin-top: 0.4rem;
-}
-.bg img
-{
-    width: 95%;
-    margin-top: 3rem;
-}
-.bg-text button
-{
-    background-color: #551B10;
-    color: white;
-    font-family: Frank Ruhl Libre;
-font-size: 18px;
-font-weight: 700;
-line-height: 25px;
-text-align: center;
-width: 44%;
-margin: 3rem 0;
-border: 1px solid #551B10;
-border-radius: 66px;
-padding: 10px 12px;
 
+/* List items in background text */
+.bg-text li {
+  color: #551B10;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-top: 0.4rem;
+  text-align: left; /* Center on small screens */
 }
+
+/* Image styling */
+.bg img {
+  width: 95%;
+  margin-top: 3rem;
+}
+
+/* Button styling */
+.bg-text button {
+  background-color: #551B10;
+  color: white;
+  font-family: Frank Ruhl Libre;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+  width: 44%;
+  margin: 6rem 0 0;
+  border: 1px solid #551B10;
+  border-radius: 66px;
+  padding: 10px 12px;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 767px) {
+  .bg-text {
+      height: auto; /* Adjust height to fit content */
+      text-align: center;
+      padding: 2rem 1rem;
+  }
+
+  .bg-text h3 {
+      font-size: 32px;
+      line-height: 40px;
+  }
+
+  .bg-text li {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+  }
+
+  .bg img {
+      width: 100%; /* Full width for better display on small screens */
+      margin-top: 1.5rem;
+  }
+
+  .bg-text button {
+      width: 70%; /* Wider button on smaller screens */
+      margin-top: 2rem;
+  }
+}
+
+/* Adjustments for tablets and small desktops */
+@media (min-width: 768px) and (max-width: 992px) {
+  .bg-text {
+      height: auto;
+  }
+
+  .bg-text h3 {
+      font-size: 36px;
+      line-height: 45px;
+  }
+
+  .bg-text li {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+  }
+
+  .bg img {
+      width: 90%;
+      margin-top: 2rem;
+  }
+
+  .bg-text button {
+      width: 50%;
+      margin-top: 4rem;
+  }
+}
+
 
 .card-content
 {
@@ -103,7 +163,7 @@ text-align: left;
 .card-content p
 {
 color: #551B10;
-font-size: 20px;
+font-size: 19px;
 font-weight: 600;
 line-height: 36px;
 text-align: left;
@@ -111,11 +171,12 @@ margin: 10px 0;
 
 }
 
+
+
 .h-text {
-    margin: 3rem 0;
+    margin: 2.5rem 0;
     background-color: #FFF6C4;
-    padding: 2rem;
-    height: auto; 
+    padding: 2.3rem;
     border-radius: 40px;
     text-align: left; 
   }
@@ -126,12 +187,11 @@ margin: 10px 0;
     font-size: 40px;
     font-weight: 400;
     line-height: 60px;
-    text-align: left; /* Default text alignment */
+    text-align: left; 
   }
   
-  .h-text small {
+  .h-text h6 {
     color: #551B10;
-    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
@@ -149,7 +209,7 @@ margin: 10px 0;
     line-height: 25px;
     text-align: center;
     width: 44%;
-    margin: 3rem 0;
+    margin-top: 4rem;
     border: 1px solid #551B10;
     border-radius: 66px;
     padding: 10px 12px;
@@ -262,7 +322,6 @@ margin: 0.9rem 0;
 .vitamin-text p
 {
   color: #551B10;
-font-family: Inter;
 font-size: 20px;
 font-weight: 600;
 line-height: 30px;
@@ -282,9 +341,8 @@ padding: 10px;
 .all h4
 {
     color: #551B10;
-font-family: Frank Ruhl Libre;
-font-size: 28px;
-font-weight: 500;
+font-family: inter,sans-serif;
+font-size: 24px;
 line-height: 48px;
 text-align: center;
 }
@@ -300,6 +358,7 @@ text-align: center;
     padding: 1rem;
     min-height: 60vh;
     text-align: center; /* Center text by default */
+    margin: 1rem 0;
   }
   
   .team-text img {
@@ -321,8 +380,8 @@ text-align: center;
   .team-text p {
     color: #551B10;
     font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 30px;
     text-align: center;
   }
@@ -408,77 +467,131 @@ text-align: center;
   
 
 /* Price Start */
-.p-flex img
-{
-width: 132px;
-height: 196px;
-margin-left: 3rem;
+.p-flex img {
+  width: 132px;
+  height: 196px;
+  margin-left: 3rem;
 }
 
-.price-text
-{
-    border: 1px solid #D4C3AF;
-    border-radius: 40px;
-    padding: 1rem;
-    min-height: 95vh;
+/* Container for price cards */
+.price-text {
+  border: 1px solid #D4C3AF;
+  border-radius: 40px;
+  padding: 1rem;
+  min-height: 95vh;
+  text-align: left; /* Center text on small screens */
 }
 
-.price-text h4
-{
+/* Pricing header text */
+.price-text h4 {
   background-color: #FC6D31;
   color: #FFFBE4;
   border-radius: 66px;
   border: 1px solid #FFFBE4;
-  width: 40%; 
-font-family: Frank Ruhl Libre;
-font-size: 25px;
-font-weight: 500;
-line-height: 48px;  
-text-align: center;
-cursor: pointer;
-}
-.price-text span
-{
-    text-decoration: line-through;
-}
-.p-flex h3
-{
-    font-family: Frank Ruhl Libre;
-font-size: 48px;
-font-weight: 400;
-line-height: 55.2px;
-color: #551B10;
+  width: 40%;
+  font-family: Frank Ruhl Libre;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 48px;
+  cursor: pointer;
+  text-align: center;
 }
 
-.price-list p
-{
-    font-family: Inter;
-font-size: 20px;
-font-weight: 500;
-line-height: 30px;
-text-align: left;
-color: #551B10;
+/* Strikethrough price span */
+.price-text span {
+  text-decoration: line-through;
 }
-.price-list li
-{
-    font-family: Inter;
-font-size: 20px;
-font-weight: 500;
-line-height: 30px;
-text-align: left;
-color: #551B10;
-}
-.price-list h6
-{
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    text-align: left;
-    color: #551B10;
 
+/* Main heading inside each price card */
+.p-flex h3 {
+  font-family: Frank Ruhl Libre;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 55.2px;
+  color: #551B10;
+}
+
+/* Price list text styling */
+.price-list p,
+.price-list li,
+.price-list h6 {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #551B10;
+  text-align: left;
+}
+
+/* Adjust for small screens */
+@media (max-width: 767px) {
+  .p-flex img {
+      width: 100px;
+      height: auto;
+      margin-left: 0;
+      margin-top: 1rem;
+  }
+
+  .price-text {
+      min-height: auto;
+      padding: 1rem;
+      text-align: center;
+  }
+
+  .price-text h4 {
+      width: 60%; /* Widen the width on smaller screens */
+      font-size: 22px;
+  }
+
+  .p-flex h3 {
+      font-size: 32px;
+      line-height: 40px;
+  }
+
+  .price-list p,
+  .price-list li,
+  .price-list h6 {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+  }
+
+  .all {
+      width: 100%;
+      padding: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .price-text {
+      min-height: auto;
+  }
+
+  .price-text h4 {
+      width: 50%;
+      font-size: 24px;
+  }
+
+  .p-flex h3 {
+      font-size: 36px;
+      line-height: 45px;
+  }
+
+  .price-list p,
+  .price-list li,
+  .price-list h6 {
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+  }
+
+  .all {
+      width: 90%;
+      margin: auto;
+  }
 }
 /* Price End */
+
 
 /* Plan Start */
 #plan
@@ -536,7 +649,7 @@ line-height: 24px;
 }
 .plan-text h6
 {
-   color: #551B10;
+   color: #3C4959;
 font-family: Inter;
 font-size: 20px;
 font-weight: 600;
